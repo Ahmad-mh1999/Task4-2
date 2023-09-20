@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منصة تعليمية</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+
+<body >
+    <header>
+        <div class="head vh-100 overflow-hidden">
+            <div class="blue-Background ">
+                <nav class="nav1 ">
+                    <div class="container">
+                        <div class="row">
+                            <div class="info col-lg-6 col-sm-12 d-flex justify-content-start align-items-center ">
+                                <div class="question  d-flex justify-content-center align-items-center ">
+                                    <i class="fa-solid fa-question text-white"></i>
+                                    <a class="nav-link text-white" href="#">Have a question</a>
+                                </div>
+                                <div class="phone   d-flex justify-content-center align-items-center">
+                                    <i class="fa-solid fa-phone text-white"></i>
+                                    <a class="nav-link text-white" href="#">09999999</a>
+                                </div>
+                                <div class="email   d-flex justify-content-center align-items-center">
+                                    <i class="fa-solid fa-envelope text-white"></i>
+                                    <a class="nav-link text-white" href="#">info@.com</a>
+                                </div>
+                            </div>
+                            <ul class=" reg col-lg-6 col-sm-12 d-flex justify-content-end gap-3 mt-2" style="list-style: none;">
+                                <li class="nav-item d-flex justify-content-center align-items-center">
+                                    <i class="fa-solid fa-lock text-white" ></i>
+                                    <a class="nav-link text-white" href="#">Login</a>
+                                </li>
+                                <li class="nav-item d-flex justify-content-center align-items-center">
+                                    <i class="fa-solid fa-user text-white"></i>
+                                    <a class="nav-link text-white" href="#">register</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <nav class="nav2 navbar navbar-light navbar-expand-lg  ">
+                    <div class="container">
+                        <!-- Navbar Logo -->
+                        <a class=" navbar-logo text-white" href="#">Learner</a>
+                        <button class="navbar-toggler bg-light border-0 shadow-none" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <!-- Sidebar -->
+                        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                            aria-labelledby="offcanvasNavbarLabel">
+                            <!-- Sidbar Header -->
+                            <div class="offcanvas-header border-bottom">
+                                <h5 class="offcanvas-title text-white nvb" id="offcanvasNavbarLabel">Learner</h5>
+                                <button type="button" class="btn-close btn-close-white text-reset" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <!-- Sidbar Body -->
+                            <div class="offcanvas-body">
+                                <ul class="navbar-nav justify-content-center  flex-grow-1 pe-3">
+                                    <li class="nav-item mx-2">
+                                        <a class="nav-link active " aria-current="page" href="#">Home</a>
+                                    </li>
+                                    <li class="nav-item dropdown mx-2">
+                                        <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown"
+                                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Reviews
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                                            <li><a class="dropdown-item" href="#sec4">Courses Reviews</a></li>
+                                            <li><a class="dropdown-item" href="#sec2">Become An Instrucor</a></li>
+                                            <li>
+                                                <hr class="dropdown-divider">
+                                            </li>
+                                            <li><a class="dropdown-item" href="#footer">Contact Us</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item mx-2">
+                                        <a class="nav-link" href="#sec1">Catagory</a>
+                                    </li>
+                                    <li class="nav-item mx-2">
+                                        <a class="nav-link" href="#sec3">Clasess</a>
+                                    </li>
+                                    <li class="nav-item mx-2">
+                                        <a class="nav-link" href="#sec7">News</a>
+                                    </li>
+                                    <li class="nav-item mx-2">
+                                        <a class="nav-link" href="#sec8">Pricing</a>
+                                    </li>
+                                </ul>
+                                <!-- Enroll Button -->
+                                <div>
+                                    <button type="button" class="btn btn-primary px-4 me-4 rounded-5 ">Enroll Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                <!-- Hero -->
+                <div class=" hero p-3 text-center bg-image rounded-3" >
+                    <div class="mask-hero">
+                        <div class="d-flex justify-content-center align-items-center flex-column h-100 pb-4">
+                            <div class="text-white text-center">
+                                <p class=" pb-4 obacity-25 text-center">Watch the Vedio</p>
+                                <h1 class="mb-3 "> <span class="multiText"></span></h1>
+                                <button type="button" class="btn btn-primary px-5 py-3  rounded-5">Explore Courses</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Catagory -->
+    <section id="sec1 mt-5">
+        <h2 class="text-center  p-5 mt-5" style="color: #136ad5;">Browes Top Catarory</h2>
+        <div class="container ">
+            <div class="coursCard row gap-3 ms-2" style="width: 100%;">
+                <div class="card1 d-flex justify-content-center align-items-center">
+                    <div class="icon1 col-4">
+                        <i class="fa-solid fa-atom" style="color: #00aeff;"></i>
+                    </div>
+                    <a class="cata col-8 nav-link " href="">
+                        <p class="CourseName">Science</p>
+                        <p class="num">2,320 Courses</p>
+                    </a>
+                </div>
+                <div class="card1 d-flex justify-content-center align-items-center  ">
+                    <div class="icon1 col-4">
+                        <i class="fa-solid fa-suitcase" style="color: #00aeff;"></i>
+                    </div>
+                    <a class="cata col-8 nav-link" href="">
+                        <p class="CourseName">Business</p>
+                        <p class="num">4,078 Courses</p>
+                    </a>
+                </div>
+                <div class="card1 d-flex justify-content-center align-items-center ">
+                    <div class="icon1 col-4">
+                        <i class="fa-solid fa-calculator" style="color: #00aeff;"></i>
+                    </div>
+                    <a class="cata col-8 nav-link" href="">
+                        <p class="CourseName">Finance Acounting</p>
+                        <p class="num ">1,558 Courses</p>
+                    </a>
+                </div>
+                <div class="card1 d-flex justify-content-center align-items-center ">
+                    <div class="icon1 col-4">
+                        <i class="fa-solid fa-pen" style="color: #00aeff;"></i>
+                    </div>
+                    <a class="cata col-8 nav-link" href="">
+                        <p class="CourseName">Design</p>
+                        <p class="num">6,854 Courses</p>
+                    </a>
+                </div>
+            </div>
+            <div class="coursCard row gap-3 ms-2 mt-4 " style="width: 100%;">
+                <div class="card1 d-flex justify-content-center align-items-center">
+                    <div class="icon1 col-4">
+                        <i class="  fa-solid fa-music" style="color: #00aeff;"></i>
+                    </div>
+                    <a class="cata col-8 nav-link" href="">
+                        <p class="CourseName">Music</p>
+                        <p class="num">4,002 Courses</p>
+                    </a>
+                </div>
+                <div class="card1 d-flex justify-content-center align-items-center  ">
+                    <div class="icon1 col-4">
+                        <i class="fa-solid fa-money-bill-trend-up" style="color: #00aeff;"></i>
+                    </div>
+                    <a class="cata col-8 nav-link" href="">
+                        <p class="CourseName">Marketing</p>
+                        <p class="num">1,358 Courses</p>
+                    </a>
+                </div>
+                <div class="card1 d-flex justify-content-center align-items-center ">
+                    <div class="icon1 col-4">
+                        <i class="fa-solid fa-camera" style="color: #00aeff;"></i>
+                    </div>
+                    <a class="cata col-8 nav-link" href="">
+                        <p class="CourseName">Design</p>
+                        <p class="num">0,899 Courses</p>
+                    </a>
+                </div>
+                <div class="card1 d-flex justify-content-center align-items-center ">
+                    <div class="icon1 col-4">
+                        <i class="fa-solid fa-dragon" style="color: #00aeff;"></i>
+                    </div>
+                    <a class="cata col-8 nav-link" href="">
+                        <p class="CourseName">Animation</p>
+                        <p class="num">6,854 Courses</p>
+                    </a>
+                </div>
+            </div>
+            <h4 class="text-center  p-5" style="color: #98adc7;">We have more Catarory here <a href="#"
+                    style="color: #337ee7; text-decoration: none;">Browes all</a></h4>
+    </section>
+    <!-- Become an Instrucor -->
+    <section id="sec2">
+        <div class="container">
+            <div class=" cont2 d-flex justify-content-between align-items-center flex-wrap ">
+                <div class="text1   ms-4 ">
+                    <h3>Become an Instrucor</h3>
+                    <p style="width: 400px;">
+                        far far awey behaind the word mountains , far
+                        from the countries Vokaila and benselvania, there live
+                        the blind texts. Seprated they live .
+                    </p>
+                    <div class="as d-flex justify-content-start">
+                        <i class="fa-solid fa-check" style="color: #0b62ef;"></i>
+                        <p class="card-text ">behaind the word mountains</p>
+                    </div>
+                    <div class="as d-flex justify-content-start">
+                        <i class="fa-solid fa-check" style="color: #0b62ef;"></i>
+                        <p class="card-text ">far far awey mountains</p>
+                    </div>
+                    <div class="as d-flex justify-content-start">
+                        <i class="fa-solid fa-check" style="color: #0b62ef;"></i>
+                        <p class="card-text ">large language ocean</p>
+                    </div>
+                    <button type="button" class="btn btn-primary px-4 mt-4 rounded-5">Get Started</button>
+                </div>
+                <div class="image ">
+                    <img src="./assets/img/st2.jpg" style="width: 400px; height: 500px;" alt="presonal photo">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Clasess -->
+    <section id="sec3" class="mt-4">
+        <div class="container d-flex justify-content-center align-items-center flex-column gap-3 pt-4 pb-4">
+            <h3>We Have Best Education</h3>
+            <p class="head_text  text-center" style="color: #9b9ace;">
+                far far awey behaind the word mountains , far
+                from the countries Vokaila and benselvania
+            </p>
+            <div class="cont3 flexBtwn flex-wrap gap-5 ms-3">
+                <a href="" class="card2 d-flex justify-content-center align-items-center flex-column text-center">
+                    <i class="p-2  fa-solid fa-music " style="width: 20px;"></i>
+                    <h5 class="p-2">Music Class</h5>
+                    <p class="p-2">
+                        far far awey behaind the word mountains , far
+                        from the countries Vokaila and benselvania, there live
+                        the blind texts. Seprated they live.
+                    </p>
+                </a>
+                <a href="" class="card2 d-flex justify-content-center align-items-center flex-column text-center">
+                    <i class="p-2  fa-solid fa-calculator" style="width: 20px;"></i>
+                    <h5 class="p-2">Math Class</h5>
+                    <p class="p-2">
+                        far far awey behaind the word mountains , far
+                        from the countries Vokaila and benselvania, there live
+                        the blind texts. Seprated they live.
+                    </p>
+                </a>
+                <a href="" class="card2 d-flex justify-content-center align-items-center flex-column text-center">
+                    <i class="p-2  fa-solid fa-e" style="width: 20px;"></i>
+                    <h5 class="p-2">English Class</h5>
+                    <p class="p-2">
+                        far far awey behaind the word mountains , far
+                        from the countries Vokaila and benselvania, there live
+                        the blind texts. Seprated they live.
+                    </p>
+                </a>
+                <a href="" class="card2 d-flex justify-content-center align-items-center flex-column text-center">
+                    <i class="p-2  fa-solid  fa-clock-rotate-left" style="width: 20px;"></i>
+                    <h5 class="p-2">History Class</h5>
+                    <p class="p-2">
+                        far far awey behaind the word mountains , far
+                        from the countries Vokaila and benselvania, there live
+                        the blind texts. Seprated they live.
+                    </p>
+                </a>
+                <a href="" class="card2 d-flex justify-content-center align-items-center flex-column text-center">
+                    <i class="p-2  fa-solid fa-hands-holding-child" style="width: 20px;"></i>
+                    <h5 class="p-2">Reading For Kids</h5>
+                    <p class="p-2">
+                        far far awey behaind the word mountains , far
+                        from the countries Vokaila and benselvania, there live
+                        the blind texts. Seprated they live.
+                    </p>
+                </a>
+                <a href="" class="card2 d-flex justify-content-center align-items-center flex-column text-center">
+                    <i class="p-2  fa-solid fa-music" style="width: 20px;"></i>
+                    <h5 class="p-2">Music</h5>
+                    <p class="p-2">
+                        far far awey behaind the word mountains , far
+                        from the countries Vokaila and benselvania, there live
+                        the blind texts. Seprated they live.
+                    </p>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Reviews -->
+    <section id="sec4">
+        <div class="container d-flex justify-content-center  flex-column pt-4">
+            <div class="d-flex justify-content-center align-items-center flex-column gap-3">
+                <h3>The Right Course For You</h3>
+                <p style="color: #9b9ace;" class="p-2  text-center">
+                    far far awey behaind the word mountains , far
+                    from the countries Vokaila and benselvania
+                </p>
+            </div>
+            <div class="cont4 flexBtwn  gap-2 flex-wrap">
+                <div class="card mb-4" style="width: 18rem;">
+                    <img class="card-img-top" src="./assets/img/teacher2.jpg" alt="Card image cap">
+                    <div class="card-body d-flex justify-content-between al ">
+                        <div class="d-flex justify-content-center" style="color: #136ad5;">
+                            <i class="fa-solid fa-person-chalkboard"></i>
+                            <p class="card-text "> 43 Lessons </p>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <i class="fa-solid fa-star" style="color: #ece509;"></i>
+                            <p class="card-text "> 4.8 </p>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Education Programe Tiltle</h5>
+                        <p class="card-p card-text">
+                            Some quick example text to build on the card title and make up the bulk of the card's
+                            content.
+                        </p>
+                    </div>
+                    <div class="card-body d-flex justify-content-between ">
+                        <p class="card-text "> 87$ </p>
+                        <a href="#" class="card-link " style="text-decoration: none;">Learn more...</a>
+                    </div>
+                </div>
+                <div class="card mb-4" style="width: 18rem;">
+                    <img class="card-img-top" src="./assets/img/teacher3.jpg" alt="Card image cap">
+                    <div class="card-body d-flex justify-content-between al ">
+                        <div class="d-flex justify-content-center" style="color: #136ad5;">
+                            <i class="fa-solid fa-person-chalkboard"></i>
+                            <p class="card-text "> 43 Lessons </p>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <i class="fa-solid fa-star" style="color: #ece509;"></i>
+                            <p class="card-text "> 4.8 </p>
+                        </div>
+
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Education Programe Tiltle</h5>
+                        <p class="card-p card-text">
+                            Some quick example text to build on the card title and make up the bulk of the card's
+                            content.
+                        </p>
+                    </div>
+                    <div class="card-body d-flex justify-content-between ">
+                        <p class="card-text "> 99$ </p>
+                        <a href="#" class="card-link " style="text-decoration: none;">Learn more..</a>
+                    </div>
+                </div>
+                <div class="card mb-4" style="width: 18rem;">
+                    <img class="card-img-top" src="./assets/img/teacher4.jpg" alt="Card image cap">
+                    <div class="card-body d-flex justify-content-between al ">
+
+                        <div class="d-flex justify-content-center" style="color: #136ad5;">
+                            <i class="fa-solid fa-person-chalkboard"></i>
+                            <p class="card-text "> 43 Lessons </p>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <i class="fa-solid fa-star" style="color: #ece509;"></i>
+                            <p class="card-text "> 4.8 </p>
+                        </div>
+
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Education Programe Tiltle</h5>
+                        <p class="card-p card-text">
+                            Some quick example text to build on the card title and make up the bulk of the card's
+                            content.
+                        </p>
+                    </div>
+                    <div class="card-body d-flex justify-content-between ">
+                        <p class="card-text "> 120$ </p>
+                        <a href="#" class="card-link " style="text-decoration: none;">Learn more..</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Tomorrow Leaders -->
+    <section id="sec5">
+        <div class=" hero p-3 text-center bg-image rounded-3" style="height: 600px;">
+            <div class="mask1">
+                <div class="d-flex justify-content-center align-items-center h-100">
+                    <div class="text-white text-center" >
+                        <h3 class="mb-3">Education For Tomorrow Leaders</h3>
+                        <p class="mb-3 obacity-25">far far awey behaind the word mountains , far
+                            from the countries Vokaila and benselvania, there live
+                            the blind texts.</p>
+                        <button type="button" class="btn btn-primary px-4 me-4 rounded-5">Enroll Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Become an Instrucor 2 -->
+    <section id="sec6">
+        <div class="container">
+            <div class=" cont5 d-flex justify-content-between flex-wrap">
+                <div class="text5  p-5 h-auto  ">
+                    <h3>Become an Instrucor</h3>
+                    <p class="text-center">
+                        far far awey behaind the word mountains , far
+                        from the countries Vokaila and benselvania, there live
+                        the blind texts. Seprated they live .
+                    </p>
+
+                    <div class="as d-flex justify-content-start">
+                        <i class="fa-solid fa-check" style="color: #0b62ef;"></i>
+                        <p class="card-text ">behaind the word mountains</p>
+                    </div>
+                    <div class="as d-flex justify-content-start">
+                        <i class="fa-solid fa-check" style="color: #0b62ef;"></i>
+                        <p class="card-text ">far far awey mountains</p>
+                    </div>
+                    <div class="as d-flex justify-content-start">
+                        <i class="fa-solid fa-check" style="color: #0b62ef;"></i>
+                        <p class="card-text ">large language ocean</p>
+                    </div>
+                    <div class="peopleNum d-flex p-5 position-relative ">
+                        <div class="d-flex align-items-start flex-column p-2">
+                            <h4>207+</h4>
+                            <p>students No</p>
+                        </div>
+                        <div class="d-flex align-items-start flex-column p-2">
+                            <h4>207</h4>
+                            <p>students No</p>
+                        </div>
+                        <div class="d-flex align-items-start flex-column p-2">
+                            <h4>207</h4>
+                            <p>students No</p>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-primary px-4 me-4 rounded-5">ADDMISSION</button>
+                    <button type="button" class="btn btn-outline-primary px-4 me-4 rounded-5">Learn More</button>
+                </div>
+                <div class="im  p-5">
+                    <div class="squr1" style="width: 300px; height: 300px; z-index: 0; "></div>
+                    <video width="400" height="300" controls>
+                        <source src="./assets/img/students.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- School News -->
+    <section id="sec7" class="   p-5">
+        <div class="container d-flex justify-content-center flex-column">
+            <div class="d-flex justify-content-center align-items-center flex-column gap-3">
+                <h3 style="color: #1f72d7;">School News</h3>
+                <p style="color: #9b9ace;" class="p-2 text-center">
+                    far far awey behaind the word mountains , far
+                    from the countries Vokaila and benselvania
+                </p>
+            </div>
+            <div class="flexBtwn flex-wrap my-4">
+                <div class="gh my-4">
+                    <div class="scNewsCard card-body d-flex justify-content-center align-items-center  ">
+                        <img style="width: 15rem; height:330px" src="./assets/img/leaders.jpg" alt="students">
+                        <div class="p-3">
+                            <h5 class="card-title" style="color: #1f72d7;">Education for Tomorrow's Leaders</h5>
+                            <div class="card-text d-flex justify-content-start align-items-start p-2 flex-wrap"
+                                style="color: #7c7597; ">
+                                <div class="d-flex justify-content-start align-items-start">
+                                    <i class="fa-solid fa-calendar-days p-2" style="color: #55637c;"></i>
+                                    <p>June 22 ,2020</p>
+                                </div>
+                                <div class="d-flex justify-content-start align-items-start">
+                                    <i class="fa-solid fa-person p-2" style="color: #6c7a93;"></i>
+                                    <p>Admin</p>
+                                </div>
+                            </div>
+                            <p class="card-text" style="color: #7c7597;">
+                                far far awey behaind the word mountains , far
+                                from the countries Vokaila and benselvania, there live
+                                the blind texts.
+                            </p>
+                            <a href="#">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="gh my-4">
+                    <div class="scNewsCard card-body d-flex justify-content-center align-items-center  ">
+                        <img style="width: 15rem; height:330px" src="./assets/img/kids.jpg" alt="Kids photo">
+                        <div class="p-3">
+                            <h5 class="card-title" style="color: #1f72d7;">Enroll Your Kids This Summer To Get 30% Off
+                            </h5>
+                            <div class="card-text d-flex justify-content-start align-items-start p-2 flex-wrap"
+                                style="color: #7c7597; ">
+                                <div class="d-flex justify-content-start align-items-start">
+                                    <i class="fa-solid fa-calendar-days p-2" style="color: #55637c;"></i>
+                                    <p>June 22 ,2020</p>
+                                </div>
+                                <div class="d-flex justify-content-start align-items-start">
+                                    <i class="fa-solid fa-person p-2" style="color: #6c7a93;"></i>
+                                    <p>Admin</p>
+                                </div>
+                            </div>
+                            <p class="card-text" style="color: #7c7597;">
+                                far far awey behaind the word mountains , far
+                                from the countries Vokaila and benselvania, there live
+                                the blind texts.
+                            </p>
+                            <a href="#">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- Pricing -->
+    <section id="sec8" class="mt-5">
+        <div class="container d-flex justify-content-center  flex-column">
+            <div class="d-flex justify-content-center align-items-center flex-column gap-3">
+                <h3 style="color: #1f72d7;">Pricing</h3>
+                <p style="color: #9b9ace;" class="p-2 text-center">
+                    far far awey behaind the word mountains , far
+                    from the countries Vokaila and benselvania
+                </p>
+            </div>
+            <div class="flexBtwn flex-wrap gap-3">
+                <a href="" class="card p-3 mb-4" style="width: 16rem;">
+                    <div class="card-body d-flex justify-content-center align-items-center flex-column ">
+                        <h5 class="card-title" style="color: #1f72d7;">Starter</h5>
+                        <p class="card-text" style="color: #1f72d7; font-size: xx-large;">
+                            50.99$ <span style="color: #7c7597; font-size: small;">/month</span>
+                        </p>
+                        <p class="card-text text-center" style="color: #7c7597;">
+                            far far awey behaind the word mountains , far
+                            from the countries Vokaila and benselvania, there live
+                            the blind texts.
+                        </p>
+                        <button type="button" class="btn btn-outline-primary px-4  rounded-5">Get Started</button>
+                    </div>
+                </a>
+                <a href="" class="card p-3 mb-4" style="width: 16rem;">
+                    <div class="card-body d-flex justify-content-center align-items-center flex-column">
+                        <h5 class="card-title" style="color: #1f72d7;">Business</h5>
+                        <p class="card-text" style="color: #1f72d7; font-size: xx-large;">
+                            74.99$ <span style="color: #7c7597; font-size: small;">/month</span>
+                        </p>
+                        <p class="card-text text-center" style="color: #7c7597;">
+                            far far awey behaind the word mountains , far
+                            from the countries Vokaila and benselvania, there live
+                            the blind texts.
+                        </p>
+                        <button type="button" class="btn btn-outline-primary px-4  rounded-5">Get Started</button>
+                    </div>
+                </a>
+                <a href="" class="card p-3 mb-4" style="width: 16rem;">
+                    <div class="card-body d-flex justify-content-center align-items-center flex-column">
+                        <h5 class="card-title" style="color: #1f72d7;">Premium</h5>
+                        <p class="card-text" style="color: #1f72d7; font-size: xx-large;">
+                            99.99$ <span style="color: #7c7597; font-size: small;">/month</span>
+                        </p>
+                        <p class="card-text text-center" style="color: #7c7597;">
+                            far far awey behaind the word mountains , far
+                            from the countries Vokaila and benselvania, there live
+                            the blind texts.
+                        </p>
+                        <button type="button" class="btn btn-outline-primary px-4  rounded-5">Get Started</button>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Carousel -->
+    <section id="sec9">
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators ">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"
+                    style="width: 5px; height: 5px; background-color: #005eff; border-radius: 50%;"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                    style="width: 5px; height: 5px; background-color: #005eff; border-radius: 50%;"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                    style="width: 5px; height: 5px; background-color: #005eff; border-radius: 50%;"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class=" d-flex justify-content-center align-items-center flex-column">
+                        <h1 style="color: #136ad5;">
+                            Carousel Slide 1
+                        </h1>
+                        <p class="w-50 p-3 mt-4" s>
+                            far far awey behaind the word mountains , far
+                            from the countries Vokaila and benselvania, there live
+                            the blind texts.far awey behaind the word mountains , far
+                            from the countries Vokaila and benselvania.
+                        </p>
+                        <img class="mb-2" src="./assets/img/me.jpg" alt="presonal photo" width="80px">
+                        <p style="color: #136ad5;">
+                            Ahmed Mh
+                        </p>
+                        <p>CEO ,Founder</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex justify-content-center align-items-center flex-column">
+                        <h1 style="color: #136ad5;">
+                            Carousel Slide 2
+                        </h1>
+                        <p class="w-50 p-3 mt-4" s>
+                            The transition duration of .carousel-item can be changed with
+                            the $carousel-transition-duration Sass variable before compiling
+                            or custom styles if you’re using the compiled CSS.
+                        </p>
+                        <img class="mb-2" src="./assets/img/me.jpg" alt="presonal photo" width="80px">
+                        <p style="color: #136ad5;">
+                            Ali 
+                        </p>
+                        <p>Acountant </p>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <div class=" d-flex justify-content-center align-items-center flex-column">
+                        <h1 style="color: #136ad5;">
+                            Carousel Slide 3
+                        </h1>
+                        <p class="w-50 p-3 mt-4" s>
+                            far far awey behaind the word mountains , far
+                            from the countries Vokaila and benselvania, there live
+                            the blind texts.far awey behaind the word mountains , far
+                            from the countries Vokaila and benselvania
+                        </p>
+                        <img class="mb-2" src="./assets/img/me.jpg" alt="presonal photo" width="80px">
+                        <p style="color: #136ad5;">
+                            Karam
+                        </p>
+                        <p>Techer</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    <!-- Why Choose Us -->
+    <section id="sec10">
+        <div class="container p-5">
+            <div class="row">
+                <div class="teache col-lg-6 col-sm-12 ">
+                    <img src="./assets/img/teacher.jpg" alt="" width="400px" height="300px">
+                </div>
+                <div class="col-lg-6 col-sm-12 mt-5">
+                    <div class="div">
+                        <h2 style="color: #136ad5;">
+                            Why Choose Us
+                        </h2>
+                        <p style="color:#7c7597 ;">
+                            far far awey behaind the word mountains , far
+                            from the countries Vokaila and benselvania, there live
+                            the blind texts.
+                        </p>
+                        <div class="choose d-flex justify-content-start align-items-center p-2"
+                            style="background-color: #136ad5; color: white; height: 40px;">
+                            <i class="fa-solid fa-minus p-2"></i>
+                            <p>
+                                Good Teachers and Staffs
+                            </p>
+                        </div>
+                        <div class="row p-3">
+                            <div class="col-md-4 col-sm-12 pb-2">
+                                <img src="./assets/img/teacher2.jpg" alt="" width="120" height="120">
+                            </div>
+                            <div class="col-md-8 col-sm-12">
+                                far far awey behaind the word mountains , far
+                                from the countries Vokaila and benselvania, there live
+                                the blind texts., far
+                                from the countries Vokaila and benselvania
+                            </div>
+                        </div>
+                        <div class="choose d-flex justify-content-start align-items-center p-2">
+                            <i class="fa-solid fa-add p-2 pb-4"></i>
+                            <p>
+                                We value Good Character
+                            </p>
+                        </div>
+                        <div class="choose d-flex justify-content-start align-items-center p-2">
+                            <i class="fa-solid fa-add p-2 pb-4"></i>
+                            <p>
+                                Your Children are Safe
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- Footer -->
+    <footer id="footer">
+        <div class=" p-5">
+            <div class="row">
+                <div class="col-md-4 col-sm-12 mb-4">
+                    <h4>
+                        About Us
+                    </h4>
+                    <p>
+                        far far awey behaind the word mountains , far
+                        from the countries Vokaila and benselvania, there live
+                        the blind texts.far awey behaind the word mountains
+                    <h4>
+                        Connect
+                    </h4>
+                    <div class=" d-flex justify-content-start align-items-center p-2">
+                        <a href="#"><i class="fa-brands fa-facebook p-2"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram p-2"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin p-2"></i></a>
+                        <a href="#"><i class="fa-brands fa-behance p-2"></i></a>
+                        <a href="#"><i class="fa-brands fa-pinterest p-2"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-12 mb-4">
+                    <h4>
+                        Project
+                    </h4>
+                    <ul class="p-2 mb-5 opacity-50" style="list-style: none;">
+                        <a href="#" style="text-decoration: none;">
+                            <li class="mb-2">Web Design</li>
+                        </a>
+                        <a href="#" style="text-decoration: none;">
+                            <li class="mb-2">HTML</li>
+                        </a>
+                        <a href="#" style="text-decoration: none;">
+                            <li class="mb-2">CSS</li>
+                        </a>
+                        <a href="#" style="text-decoration: none;">
+                            <li class="mb-2">jQuery</li>
+                        </a>
+                        <a href="#" style="text-decoration: none;">
+                            <li class="mb-2">Bootstrap</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-12 mb-4">
+                    <h4 class="mb-4">
+                        Gallery
+                    </h4>
+                    <div class="d-flex justify-content-start align-items-center flex-wrap gap-2 row">
+                        <img class="col-3" src="./assets/img/teacher2.jpg" alt="" width="75px">
+                        <img class="col-3" src="./assets/img/teacher3.jpg" alt="" width="75px">
+                        <img class="col-3" src="./assets/img/teacher4.jpg" alt="" width="75px">
+                        <img class="col-3" src="./assets/img/kids.jpg" alt="" width="75px">
+                        <img class="col-3" src="./assets/img/st3.jpg" alt="" width="75px">
+                        <img class="col-3" src="./assets/img/st1.jpg" alt="" width="75px">
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-12 p-2 mb-4">
+                    <h4 class="mb-3">
+                        Contact
+                    </h4>
+                    <h5> Syria , Homs</h5>
+                    <div class="opacity-50">
+                        <p>0315875265</p>
+                        <p>0779418995</p>
+                        <p>infoExample@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>    
+    <script src="./assets/js/main.js"></script>
+    <script>
+        
+    </script>
+
+</body>
+
+</html>

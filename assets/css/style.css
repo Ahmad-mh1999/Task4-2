@@ -1,0 +1,431 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Dancing+Script:wght@700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none !important;
+}
+ul{
+    list-style: none !important;
+}
+.flexCol{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.flexRow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flexBtwn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.head{
+    min-height: 100vh;
+    background-image: url('./../img/hero.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.blue-Background{
+    min-height: 100vh;
+    background-color: rgba(0, 0, 255, 0.3);
+    position: relative;
+    z-index: 999;
+}
+.nav1{
+    margin: 0 !important;
+    height: 40px; 
+    border-bottom: 1px solid rgb(167, 160, 160) !important;
+}
+.nav1 .info i {
+    position: relative;
+    top: 2px;
+    right: 5px;
+    font-size: 13px;
+}
+.question , .phone , .email {
+    position: relative;
+    bottom: 5px;
+}
+.nav1 .reg i {
+    position: relative;
+    right: 5px;
+    font-size: 10px;
+}
+.nav2{
+    z-index: 999 !important;
+}
+.nav2 a , .reg a{
+    border-radius: 20px;
+}
+.reg a{
+    padding: 3px;
+    border-radius: 20px;
+}
+
+.nav2 a:hover , .reg a:hover{
+    background-color: #0943f1;
+
+    transition: all 0.5s ease-out;
+}
+.dropdown-menu{
+    background: none !important;
+    backdrop-filter: blur(10px) ;
+}
+.offcanvas-body a{
+    color: white !important;
+}
+.hero{
+    margin-top: 200px;
+    background-color:rgba(25, 0, 255, 0.2) !important;
+    backdrop-filter: blur(5px) !important;
+    border-radius: 20PX;
+    height:300px;
+    padding-top: 50px;
+}
+
+.navbar-logo{
+    font-family: 'Dancing Script', 'Helvetica Neue', Arial, Helvetica;
+    font-size: xx-large;
+}
+.nvb{
+    font-family: 'Dancing Script', 'Helvetica Neue', Arial, Helvetica;
+    font-size: xx-large;
+}
+.info{
+    gap: 30px;
+}
+.reg{
+    padding-right: 25px !important;
+}
+
+.mask-hero{
+    margin-top: 50px;
+}
+.mask1{
+    height: 300px;
+    margin-top: 100px;
+}
+.card1{
+    background-color:#f3f7fd;
+    width: 250px !important;
+    height: 70px;
+    border-radius: 20px;
+    box-shadow: 7px 5px 6px rgba(0,0,0,0.2);
+}
+.card1 a:link{
+    color: #000 !important;
+}
+.card1:hover{
+    background-image: linear-gradient(to right, #3d5369, #23b2dd);
+    color: white !important;
+    transform: scale(1.2);
+    transition: all 0.5s ease-out;
+}
+.card1 i{
+    position: relative;
+    left: 20px;
+}
+.coursCard{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cata{
+    padding-top: 10px;
+} 
+
+.card1 p{
+    margin-bottom: 0;
+    width: 150px;
+}
+.card1 .num{
+    opacity: 75% ;
+    padding-bottom: 10px;
+    font-size: 7px;
+} 
+.card1 .CourseName{
+    font-size: 18px;
+}
+#sec2{
+    height: 600px;
+    background-color: #f8f9fa;
+}
+.cont2{
+    
+    height: 500px;
+}
+
+.text1 h3{
+    color: #136ad5;
+}
+.text1 p , .text1 ul{
+    color: #98adc7;
+}
+.start{
+    background-color: #136ad5;
+    padding:10px  20px;
+    color: white;
+    border-radius: 20px;
+}
+.cont2 .image {
+    position: relative;
+    bottom: 40px;
+}
+.card2{
+    width: 300px;
+    height: fit-content;
+    background-color: #fff;
+    border: 1px solid #d3d2d2;
+    padding: 20px;
+    box-shadow: 7px 5px 6px rgba(0,0,0,0.2);
+}
+.card2 p{
+    font-size: 15px;
+}
+.card2 i{
+    position: relative;
+    right: 4px;
+    color: #136ad5;
+}
+.card2 h5 {
+    color: #136ad5;
+}
+.card2:hover{
+    background-image: linear-gradient(to top, #136ad5, #f3ebeb) !important;
+    color: white !important;
+    transform: scale(1.2);
+    transition: all 1s ease-out;
+}
+.card{
+    box-shadow: 7px 5px 6px rgba(0,0,0,0.2) !important;
+}
+#sec3 h3{
+    color: #136ad5;
+}
+.al i{
+    position: relative;
+    top: 4px;
+    right: 3px;
+}
+#sec4 ,#sec9 {
+    background-color: #f8f9fa;
+}
+#sec4 h3{
+    color: #136ad5;
+}
+#sec4 .card-p{
+    color: #bbbbee ;
+}
+#sec4 .card:hover{
+    background-image: linear-gradient(to top, #010b18, #8699d4) !important;
+    color: white !important;
+    transform: scale(1.1);
+    transition: all 1s ease-out;
+}
+.squr1{
+    background-color: #136ad5;
+    position: relative;
+    left: 100px;
+    bottom: 50px;
+    z-index: 0 !important;
+}
+.im video{
+    z-index: 50 !important;
+    position: relative;
+    right: 100px;
+    bottom: 300px;
+}
+#sec6{
+    padding-top: 50px;
+    height: 100vh;
+}
+.text5{
+padding-left: 200px !important;
+width: 500px;
+}
+.text5 h3{
+    color: #136ad5;
+}
+.text5 p{
+    color: #98adc7;
+}
+.as i{
+    position: relative;
+    top: 4px;
+    right: 6px;
+}
+.peopleNum{
+    right: 53px;
+}
+#sec5{
+    background-image: url('./../img/st1.jpg');
+    background-size: cover;
+}
+.gh{
+    width: 30rem;
+    padding: 0 !important;
+    background: white;
+}
+#sec7{
+    background-color:#f8f9fa ;
+}
+#sec7 i{
+    position: relative;
+    bottom: 3px;
+    
+}
+#sec8{
+    padding-top: 100px;
+    height: 700px;
+}
+#sec8 .card:hover{
+    background-image: linear-gradient(to top, #95c0f8, #f5f7fd) !important;
+    color: white !important;
+    transform: scale(1.1);
+    transition: all 1s ease-out;
+}
+.caro{
+    height: 100vh !important;
+    background-color: #98adc7;
+}
+.carousel-item{
+    height: 100vh;
+    color: black;
+    background-color: #3d5369;
+    padding-top: 200px;
+}
+.carousel-item img{
+    border-radius: 50%;
+}
+.carousel-item {
+    background-color: #f8f9fa;
+}
+
+.carousel-item .carousel-indicators li {
+    background-color: #136ad5 !important;
+    color: #4bb8ff;
+    border-radius: 50%;
+}
+#sec11 .choose p{
+    position: relative;
+    top:  7px;
+    
+}
+footer{
+    background-color: #136ad5;
+    color: #fff;
+    text-decoration: none;
+}
+footer a:link{
+    color: white !important;
+}
+footer a:visited{
+    color: white !important;
+}
+@media only screen and (max-width: 981px) {
+    .nav1 {
+        border-bottom: none !important;
+    }
+    .nav1 .info{
+        justify-content: center !important;
+        font-size: 12px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .nav1 .reg{
+        justify-content: center !important;
+        padding-left: 40px;
+    }
+    .nav2 .navbar-logo{
+        font-size: 20px;
+    }
+    .nav2{
+        top: 58px;
+        height: 60px;
+        
+    }
+    .offcanvas {
+        background: none !important;
+        backdrop-filter: blur(10px) ;
+    }
+    .offcanvas-body button {
+        margin: 20px 120px;
+    }
+    #sec2{
+        height: 1000px;
+    }
+    .coursCard{
+        justify-content: center !important;
+    }
+    #sec2 .text1{
+        position: relative;
+        left: 70px;
+    }
+    #sec2  p {
+        width: 200px !important;
+    }
+    #sec2 img{
+        width: 300px !important;
+        height: 500px !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        position: relative;
+        top: 100px;
+        left: 35px;
+    }
+    .cont3{
+        justify-content: center !important;
+    }
+    #sec4 .cont4{
+        justify-content: center !important;
+    }
+    .flexBtwn { 
+        justify-content: center !important;
+    }
+    .card2{
+        width: 250px;
+    }
+    .head_text{
+        width: 200px !important;
+    }
+    #sec6{
+        height: max-content !important;
+    }
+    #sec6 .text5{
+        width: 300px;
+    }
+    #sec6 .im .squr1{
+        display: none;
+    }
+    #sec6 .im video{
+        width: 200px !important;
+        height: 150px !important;
+        position: relative;
+        bottom: 30px;
+        left: 30px;
+        margin: 0 auto;
+    }
+    #sec7 .gh{
+        width: 25rem;
+    }
+    #sec7 .scNewsCard{
+        flex-wrap: wrap;
+    }
+    #sec8{
+        height: max-content;
+    }
+    #sec10 .teache img{
+        width: 250px !important;
+        height: 175px !important;
+    }
+}
+
