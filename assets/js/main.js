@@ -6,7 +6,7 @@ if (window.scrollY == 0) {
 
 }
 if (screen.width <= 981) {
-    coursCard.classList.remove('ms-2');
+    
     if (window.scrollY > 0) {
 
         navbar.style.background = '#106ae0';
